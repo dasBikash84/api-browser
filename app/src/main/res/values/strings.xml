@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">API Browser</string>
+    <string name="api_browser">Api Browser</string>
+    <string name="bookmarks">BookMarks</string>
+    <string name="get_auth_token">Get Auth token</string>
+    <string name="add_auth_token">Add/Change Auth token</string>
+    <string name="status_code_message">Status Code : %1$d</string>
+    <string name="api_error_message">Message : %1$s</string>
+    <string name="error_doc">Doc : %1$s</string>
+    <string name="generic_error_message">Something went wrong!!</string>
+    <string name="github_personal_token">https://github.com/settings/tokens</string>
+</resources>

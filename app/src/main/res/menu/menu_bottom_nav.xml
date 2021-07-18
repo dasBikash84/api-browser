@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/browseFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_github"
+        android:title="@string/api_browser" />
+
+    <item
+        android:id="@+id/phFragment"
+        android:enabled="false"
+        android:visible="false"
+        android:title="" />
+    <item
+        android:id="@+id/bookmarksFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_bookmarks"
+        android:title="@string/bookmarks" />
+</menu>

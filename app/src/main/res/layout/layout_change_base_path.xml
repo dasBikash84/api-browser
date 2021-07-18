@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="16dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:background="#20000000">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOldPathPrompt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="4dp"
+            android:text="Old Path:"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvOldPath"
+            app:layout_constraintEnd_toEndOf="@id/tvNewPathPrompt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOldPath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="#18000000"
+            android:inputType="none"
+            android:padding="4dp"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvOldPathPrompt"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNewPathPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            android:text="New Path:"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOldPath" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNewPath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvNewPathPrompt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvNewPathPrompt"
+            app:layout_constraintTop_toTopOf="@id/tvNewPathPrompt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSavePath"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Save Path"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNewPath" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

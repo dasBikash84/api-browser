@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/browseFragment">
+
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.dasbikash.api_browser.ui.fragments.BookMarksFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_bookmarks" />
+
+    <fragment
+        android:id="@+id/browseFragment"
+        android:name="com.dasbikash.api_browser.ui.fragments.BrowserFragment"
+        android:label="browseFragment"
+        tools:layout="@layout/fragment_browser">
+
+        <argument
+            android:name="arg_path"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/>
+
+        <argument
+            android:name="arg_json_obj"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+
+
+</navigation>

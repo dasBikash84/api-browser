@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="32dp"
+    android:minWidth="32dp"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivNotBookMarked"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_bookmark_border" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBookMarked"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_bookmarks" />
+</androidx.appcompat.widget.LinearLayoutCompat>

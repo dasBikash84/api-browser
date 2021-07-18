@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vhApiError"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20000000"
+    android:elevation="8dp"
+    android:gravity="start|center_vertical"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStatusCode"
+        style="@style/errorTextView"
+        android:background="@android:color/darker_gray"
+        android:text="@string/status_code_message" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvErrorMessage"
+        style="@style/errorTextView"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/api_error_message" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDocUrl"
+        style="@style/errorTextView"
+        android:background="@android:color/darker_gray"
+        android:text="@string/error_doc" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddToken"
+        style="@style/errorTextView"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/add_auth_token" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGetToken"
+        style="@style/errorTextView"
+        android:background="@android:color/darker_gray"
+        android:text="@string/get_auth_token" />
+</androidx.appcompat.widget.LinearLayoutCompat>
